@@ -8,6 +8,7 @@ class NpmCommands
     STDERR.puts 'Installing npm dependencies...'
     install_status = Dir.chdir File.expand_path('..', File.dirname(__FILE__)) do
       system('npm', 'install', *args)
+      system('npm', 'audit', 'fix', '--force')
     end
     STDERR.puts(
       *if install_status

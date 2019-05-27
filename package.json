@@ -7,10 +7,10 @@
     "lib": "lib"
   },
   "dependencies": {
-    "penthouse": "=1.10.2"
+    "penthouse": "^2.2.0"
   },
   "license": "MIT",
   "config": {
-    "puppeteer_skip_chromium_download": true
+    "puppeteer_skip_chromium_download": false
   }
 }
